@@ -9,6 +9,8 @@ pipeline {
             steps {
               //sh 'ng build' //run this command inside Container
               sh 'ls -al'
+              sh 'npm install'
+              sh 'ls -al'
             }
         }
     }
