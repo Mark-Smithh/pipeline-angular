@@ -6,9 +6,9 @@ pipeline {
     stages {
         stage('Angular Build') {
             agent { dockerfile true } //USE DOCKERFILE AT REPOSITORY ROOT
-            steps {
-              //sh 'ng build' //run this command inside Container
+            steps {              
               sh 'ls -al'
+              sh 'ng build' //run this command inside Container
 //              sh 'npm install'
 //              sh 'ls -al'
             }
